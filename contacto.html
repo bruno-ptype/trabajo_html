@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-    <html lang="es">
-        <meta chatset="utf-8">
-        <head> 
-            <title>Galeria de Arte</title>
-            <p><a href="./index.html">Pagina de inicio</p></a><p><a href="./galeria.html">Galeria de arte</p></a>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <div>
-                <h1>Contáctanos</h1>
-                <p>Para contactarte con nosotros rellena los formularios a continuación con los datos requeridos. Nuestro equipo se encargará de contactarse contigo lo más pronto que nos sea posible.</p>
-            </div>
-        </body>
-        <hr>
-        <form>
-            <h2>Escribe tus datos de contacto</h2>
-            <textarea>escribe aqui tu comentario</textarea>
-            <button type="submit"></button>
-        </form>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Arte - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menú principal -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario de contacto -->
+    <h1>Contáctanos</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="solicitud">Tipo de solicitud:</label>
+        <select id="solicitud" name="solicitud" required>
+            <option value="compra">Compra</option>
+            <option value="consulta">Consulta</option>
+            <option value="venta">Venta</option>
+        </select><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Información adicional -->
+    <h2>Otros medios de contacto</h2>
+    <p>Dirección: Av. Apoquindo 5950, Santiago, Chile</p>
+    <p>Teléfono: +56 9 1234 5678</p>
+</body>
+</html>
